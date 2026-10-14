@@ -9,5 +9,9 @@ print(data.head())
 X = data ["text"]
 y = data ["label"]
 from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+print(len(data))
+print(len(X_train))
+print(len(X_test))
 
 
